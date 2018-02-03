@@ -75,4 +75,10 @@ fun main(args: Array<String>) {
     println(observableValue)
     observableValue = "Hello"
     println(observableValue)
+
+
+    val sum: (Int, Int)->Int = {x: Int, y: Int -> {
+        if(x > 3) return@sum 8
+        return 9
+    }}
 }
